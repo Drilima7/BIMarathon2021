@@ -1,0 +1,65 @@
+city_code;quantity
+;
+;
+;
+;
+330010 Angra dos Reis;7
+330020 Araruama;5
+330023 Armação dos Búzios;2
+330025 Arraial do Cabo;2
+330030 Barra do Piraí;3
+330040 Barra Mansa;5
+330045 Belford Roxo;4
+330060 Bom Jesus do Itabapoana;3
+330070 Cabo Frio;8
+330080 Cachoeiras de Macacu;2
+330100 Campos dos Goytacazes;17
+330130 Casimiro de Abreu;1
+330150 Cordeiro;1
+330170 Duque de Caxias;15
+330185 Guapimirim;2
+330190 Itaboraí;6
+330200 Itaguaí;6
+330210 Itaocara;2
+330220 Itaperuna;3
+330240 Macaé;19
+330250 Magé;8
+330270 Maricá;3
+330285 Mesquita;2
+330290 Miguel Pereira;1
+330300 Miracema;2
+330320 Nilópolis;5
+330330 Niterói;12
+330340 Nova Friburgo;7
+330350 Nova Iguaçu;15
+330360 Paracambi;1
+330370 Paraíba do Sul;3
+330390 Petrópolis;12
+330414 Queimados;2
+330420 Resende;3
+330430 Rio Bonito;2
+330452 Rio das Ostras;3
+330455 Rio de Janeiro;222
+330470 Santo Antônio de Pádua;2
+330480 São Fidélis;1
+330490 São Gonçalo;23
+330500 São João da Barra;1
+330510 São João de Meriti;13
+330520 São Pedro da Aldeia;2
+330530 São Sebastião do Alto;1
+330550 Saquarema;5
+330555 Seropédica;1
+330580 Teresópolis;5
+330600 Três Rios;4
+330610 Valença;3
+330620 Vassouras;2
+330630 Volta Redonda;16
+Total;495
+ Fonte: Ministério da Saúde - Cadastro Nacional dos Estabelecimentos de Saúde do Brasil - CNES;
+ Nota:;
+ A partir do processamento de junho de 2012, houve mudança na classificação da natureza e esfera dos estabelecimentos. Com isso, temos que:;
+ ;
+" Até maio de 2012 estas informações estão disponíveis como ""Natureza"" e ""Esfera Administrativa"".";
+" De junho de 2012 a outubro de 2015, estão disponíveis tanto como ""Natureza"" e ""Esfera Administrativa"", como ""Natureza Jurídica"" e ""Esfera Jurídica"".";
+" A partir de novembro de 2015, estão disponíveis como ""Natureza Jurídica"" e ""Esfera Jurídica"".";
+ ;
