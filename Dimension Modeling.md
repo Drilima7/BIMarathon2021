@@ -1,10 +1,15 @@
-Identify Business Process  Mental health situation at a workplace
+Identify Business Process - Mental health situation at a workplace
 
-Identify Grain - 
+Identify Grain - Mental health situation in the tech industry in 2019
 
 Identify Dimensions 
-1- Employee ID 
-2- Address )
+1- Employee (Age, race, gender)
 
-3- Employment (
+2- Address 
+
+3- Employment
+
+Mental 
 Identify Facts
+
+
