@@ -1,0 +1,26 @@
+* Identify Business Process - Young studant's situation, especially educational stress.
+
+* Identify Grain - The stress on young studants and how their environment and relationships changed with the pandemic in 2020
+
+* Identify Dimensions 
+
+1- Studant (Category, age, gender)
+
+2- Address (Country, state)
+
+3- Educational environment (Environment Before pandemic and environment after pandemic)
+
+4- Before Pandemic (Classwork - homework - homework hours)
+5- After Pandemic (Classwork - homework - homework hours - Family Relationship - Friends Relationship)
+
+* Identify Facts
+Stress level
+
+FK_1_Before-ClassworkStress
+FK_2_Before-homeworkStress
+FK_3_After-ClassworkStress
+FK_4_After-HomeworkStress
+
+
+
+
