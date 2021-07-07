@@ -8,15 +8,14 @@
 
 2- Address (Country, state)
 
-3- Matrics (Before pandemic, after pandemic, classwork, homework, homework hours, Family Relationship, Friends Relationship)
+3- Matrics Description (Before pandemic, after pandemic, classwork, homework, homework hours, Family Relationship, Friends Relationship)
 
 * Identify Facts
-Stress level
+Metric
 
-FK_1_Before-ClassworkStress
-FK_2_Before-homeworkStress
-FK_3_After-ClassworkStress
-FK_4_After-HomeworkStress
-FK_5_Metrics
+FK_1_Student
+FK_2_Adress
+FK_3_MetricDescription
+Metrics
      
 
