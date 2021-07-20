@@ -195,7 +195,7 @@ SELECT distinct
      
      ;
        
-	select*
+	select *
     from fact_table;
     
 select ds.category, da.state, f.before_environment
@@ -226,3 +226,100 @@ from fact_table f
 join dim_address da on f.address_id = da.address_id
 join dim_student ds on ds.student_id = f.student_id
 where ds.age = '20'
+;
+
+select ds.category, da.state, f.now_environment
+from fact_table f
+join dim_address da on f.address_id = da.address_id
+join dim_student ds on ds.student_id = f.student_id
+where ds.gender = 'male'
+
+;
+select ds.category, da.state, f.before_environment
+from fact_table f
+join dim_address da on f.address_id = da.address_id
+join dim_student ds on ds.student_id = f.student_id
+where ds.age = '20'
+;
+-- Module 3
+
+-- finding duplicates - 
+
+select *
+from dim_address;
+
+Insert into dim_address(country)
+values ('FR'), ('RS');
+
+Select
+      country 
+	, COUNT(*) AS CNT
+    FROM dim_address
+    GROUP BY country
+    HAVING COUNT(*)>1;
+
+select *
+from dim_address;
+
+delete from dim_address
+where address_id in (32,33); 
+
+-- case when
+
+  select *,
+        CASE WHEN address_id = 1 THEN 'US'
+        ELSE 'OTHER' END AS ADDRESS_extra
+        from dim_address
+        
+        ;
+        
+        -- COALESCE 
+        
+          SELECT 
+            category,
+            age,
+            coalesce(gender, 'FEMALE') AS gender
+            FROM dim_student
+            ;
+        
+        
+        -- NULLIFF 
+        
+        SELECT 
+            category,
+            age,
+            nullif(gender, 'male') AS gender
+            FROM dim_student
+            ;
+        
+  -- LEAST/GREATEST 
+  
+         SELECT 
+              state,
+              gender,
+              age,
+              before_environment,
+              now_environment,
+              greatest(2, before_homeworkStress) as before_homeworkStress,
+              now_homeworkStress
+              FROM temp_table
+              
+              ;
+              
+              SELECT 
+              state,
+              gender,
+              age,
+              before_environment,
+              now_environment,
+              least(5, now_homeworkStress) as now_homeworkStress
+              FROM temp_table
+              
+              ;
+
+ ALTER table temp_table rename column now_hhomeworkStress to now_homeworkStress ;
+ 
+ Select 
+       distinct country
+       from dim_address ;
+ 
