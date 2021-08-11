@@ -102,7 +102,7 @@ ALTER table fact_table rename column now_hhomeworkStress to now_homeworkStress ;
        distinct state
        from dim_address;
        
- -- Modulo 4 - CTE
+-- Modulo 4 - CTE
  
  /* Showing the avg of homework hours by male students before the pandemic */ 
  
@@ -138,8 +138,8 @@ ALTER table fact_table rename column now_hhomeworkStress to now_homeworkStress ;
      ,address_id
      ,before_environment
      ,now_environment
-     , sum(CASE WHEN now_homeworkStress  between 4 and 5 then student_id end) as "stressed" 
-     ,sum(case when now_classworkStress between 4 and 5 then student_id end) as "stressed"
+     , sum(CASE WHEN now_homeworkStress in (4, 5) then student_id end) as "stressed" 
+     ,sum(case when now_classworkStress in (4,5) then student_id end) as "stressed"
      from fact_table
      where now_homeworkHours > 5
      group by 1,2,3,5;
@@ -150,16 +150,20 @@ ALTER table fact_table rename column now_hhomeworkStress to now_homeworkStress ;
 ;     
      
  
- -- SELF JOINS
+ -- SELF JOINS - homework
  
  Select 
-        a.Name as student
-        From student as a 
-        Join student_id as b on a.now_homeworkStress = b.Stress
-        WHERE a.now_classworkStress > b.now_homeworkStress
+        before_environment as be,
+        now_environment as ne,
+        before_homeworkStress,
+        now_homeworkStress
+        From fact_table
+        WHERE before_homeworkStress > now_homeworkStress
+        order by 1 
+        
+        ;
  
- 
- ;
+
  -- WINDOW FUNCTION
  
  /* Showing the rank of student and their enviromnent by homework 
